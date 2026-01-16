@@ -51,25 +51,7 @@
                 <div class="hero"><img src="./assets/images/rainydays_logo.png"
                         alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear" />
                 </div>
-                <div class="product-list-home">
 
-                    <div class="product"><img src="./assets/images/style_jackets_versa_2.jpg"
-                            alt="Stylish rain jackets in various colors and designs, perfect for staying dry during wet weather" />
-                        <h2>Style Jackets Versa 2</h2>
-                    </div>
-                    <div class="product"><img src="./assets/images/helly_hansen_runner_3.jpg" alt="Helly Hansen Runner rain jacket in vibrant red, designed for optimal waterproof performance
-                        and comfort" />
-                        <a href="product-details-helly-hansen-runner-3.html">
-                            <h2>Helly Hansen Runner 3</h2>
-                    </div>
-                    <div class="product"><img src="./assets/images/strim_fleece_3.jpg"
-                            alt="Cozy Strim fleece jacket in green brown, ideal for layering and warmth in cooler, rainy conditions" />
-                        <h2>Strim Fleece 3</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <button class="shop-button" href="products.html">Shop</button>
     </main>
     <footer>
         <div class="footer">
