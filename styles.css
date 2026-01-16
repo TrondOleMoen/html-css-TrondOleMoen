@@ -70,9 +70,6 @@ button {
 label {
   width: 100%;
 }
-p {
-  text-align: center;
-}
 nav {
   width: 100%;
   height: 5rem;
@@ -81,6 +78,9 @@ nav {
   align-items: center;
   padding: 10px;
   background-color: rgb(16, 141, 165);
+}
+.shopping_cart_24 {
+  padding-right: 10px;
 }
 footer {
   width: 100%;
@@ -91,8 +91,10 @@ footer {
   background-color: rgb(16, 141, 165);
 }
 .logo {
-  margin: auto;
+  margin-left: auto;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 .social-media {
   display: flex;
@@ -233,17 +235,19 @@ a:active {
 .product-details-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: auto;
-  width: 1fr;
-  text-align: left;
+  align-items: flex-start;
+  padding-left: 10px;
 }
 .cart {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.credit_card_24 {
+  padding-right: 10px;
 }
 .product-details-container {
   display: flex;
+  max-width: 600px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -258,8 +262,8 @@ a:active {
   border-radius: 10px;
 }
 .product-1 img {
-  height: 500px;
-  width: 1fr;
+  height: 250px;
+  width: 250px;
   border-radius: 10px;
 }
 
