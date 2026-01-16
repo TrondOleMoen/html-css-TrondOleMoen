@@ -78,7 +78,7 @@ p {
 
 nav {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,9 +99,9 @@ nav {
   align-items: center;
 }
 .nav-right {
-  display: flex;
-  align-items: center;
+  display: grid;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-logo img {
@@ -152,12 +152,12 @@ a:active {
   justify-content: center;
   margin: 20px;
 }
-
+/*
 .btns {
   display: flex;
 }
 
-.btn {
+.button {
   padding: 0.5rem 1.5rem;
   border-radius: 30px;
   font-weight: 600;
@@ -168,12 +168,22 @@ a:active {
   cursor: pointer;
   transition: 0, 3s;
 }
+.btn size {
+  margin-left: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: hsl(0, 0%, 25%);
+  color: black;
+}
 
 .btn:hover {
   background: hsl(0, 0%, 10%);
   color: white;
   box-shadow: 0 0 25px darkgreen;
 }
+  */
 
 .product-list-home {
   display: grid;
@@ -249,6 +259,8 @@ a:active {
 /*
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 1em;
 }
-*/
+  */
