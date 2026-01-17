@@ -251,7 +251,7 @@ footer {
 .product-details-container {
   display: flex;
   padding-top: 50px;
-  max-width: 600px;
+  max-width: 550px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -317,7 +317,9 @@ footer {
 
 .back-button,
 .payment-button,
-.cart-button {
+.cart-button,
+.products-button,
+.product-details-button {
   padding: 8px;
   border: 2px solid black;
   border-radius: 8px;
@@ -332,7 +334,10 @@ footer {
 }
 
 .payment-button:hover,
-.products-button:hover {
+.products-button:hover,
+.pdetails:hover,
+.products:hover,
+.product-details-button:hover {
   color: white;
   background-color: #2f9a63;
 }
@@ -342,4 +347,21 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.products-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content h3,
+.footer-content p {
+  color: white;
 }
