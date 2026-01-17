@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa4d8bdf69.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Rainy Days</title>
@@ -33,80 +31,49 @@
             </div>
         </nav>
 
-        <main>
-            <section>
-                <div class="hero">
-                    <img src="./assets/images/rainydays_logo.png"
-                        alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear" />
-                </div>
-            </section>
+        <main class="payment-page">
             <form>
                 <h1>Payment form</h1>
                 <p>Please fill in your required (*) information below.</p>
-                <section>
+                <section class="payment-form">
                     <h2>Contact information</h2>
-                    <p>
-                        <label for="fullname">Full name*:</label>
-                        <input type="text" id="fullname" name="user-fullname" required placeholder="John Doe" />
-                    </p>
-                    <p>
-                        <label for="email">Email*:</label>
-                        <input type="email" id="email" name="user-email" required placeholder="john.doe@example.com" />
-                    </p>
-                    <p>
-                        <label for="pwd">Password*:</label>
-                        <input type="password" id="pwd" name="password" required placeholder="Password" />
-                    </p>
-                    <p><label for="address">Address*:</label>
-                        <input type="text" id="address" name="user-address" required placeholder="1234 Main St" />
-                    </p>
-                    <p>
-                        <label for="city">City*:</label>
-                        <input type="text" id="city" name="user-city" required placeholder="Oslo" />
-                    </p>
-                    <p>
-                        <label for="zip">ZIP code*:</label>
-                        <input type="text" id="zip" name="user-zip" required placeholder="0123" />
-                    </p>
-                    <p>
-                        <label for="country">Country*:</label>
-                        <input type="text" id="country" name="user-country" required placeholder="Norway" />
-                    </p>
-                    </label>
+                    <label for="fullname">Full name*:</label>
+                    <input type="text" id="fullname" name="user-fullname" required placeholder="John Doe" />
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="user-email" required placeholder="john.doe@example.com" />
+                    <label for="pwd">Password*:</label>
+                    <input type="password" id="pwd" name="password" required placeholder="Password" />
+                    <label for="address">Address*:</label>
+                    <input type="text" id="address" name="user-address" required placeholder="1234 Main St" />
+                    <label for="city">City*:</label>
+                    <input type="text" id="city" name="user-city" required placeholder="Oslo" />
+                    <label for="zip">ZIP code*:</label>
+                    <input type="text" id="zip" name="user-zip" required placeholder="0123" />
+                    <label for="country">Country*:</label>
+                    <input type="text" id="country" name="user-country" required placeholder="Norway" />
                 </section>
                 <h2>Payment information</h2>
-                <p>
-                    <label for="card">
-                        <span>Card type:</span>
-                    </label>
-                    <select id="card" name="user-card">
+                <section class="payment-form">
+                    <label for="card">Card type:</label>
+                    <select id="card" name="card">
                         <option value="visa">Visa</option>
                         <option value="mc">MasterCard</option>
                         <option value="amex">American Express</option>
                     </select>
-                </p>
-                <p>
                     <label for="number">Card number*:</label>
                     <input type="tel" id="number" name="card-number" required placeholder="1234 5678 9012 3456"
                         pattern="[0-9\s]{13,19}" maxlength="19">
-                </p>
-                <p>
                     <label for="expiration">Expiration date*:</label>
                     <input type="text" id="expiration" name="expiration" required placeholder="MM/YY"
                         pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
-                </p>
-                <p>
                     <label for="cvv">CVV*:</label>
                     <input type="tel" id="cvv" name="cvv" required placeholder="123" pattern="[0-9]{3,4}" maxlength="4">
-                </p>
-                </section>
-                <section>
-                    <p>
-                        <button type="submit">Submit Payment</button>
-                    </p>
                 </section>
             </form>
+            <a href="confirmation.html"><button class="submit">Submit
+                    Payment</button></a>
         </main>
+        <a href="cart.html" class="back-button"><i class="fa-solid fa-arrow-left"></i>back</a>
         <footer>
             <div class="footer">
                 <div class="footer-content">

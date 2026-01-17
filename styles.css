@@ -165,6 +165,10 @@ footer {
 
 .bottom-nav {
   display: flex;
+  gap: 15px;
+  padding: 0px 40px;
+  margin-top: 130px;
+  justify-content: space-between;
 }
 
 .push {
@@ -246,10 +250,17 @@ footer {
 
 .product-details-container {
   display: flex;
+  padding-top: 50px;
   max-width: 600px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .product-details-container {
+    flex-direction: column;
+  }
 }
 
 .product p {
@@ -266,4 +277,69 @@ footer {
   height: 250px;
   width: 250px;
   border-radius: 10px;
+}
+
+.products-page {
+  min-height: 80vh;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+.payment-form input {
+  padding: 6px;
+  width: 250px;
+}
+.payment-form select {
+  padding: 6px;
+  max-width: fit-content;
+}
+#zip,
+#cvv {
+  max-width: 60px;
+}
+
+#expiration {
+  max-width: 80px;
+}
+
+.submit {
+  margin: 0 auto;
+}
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0px;
+}
+
+.back-button,
+.payment-button,
+.cart-button {
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.back-button:hover,
+.cart-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.payment-button:hover,
+.products-button:hover {
+  color: white;
+  background-color: #2f9a63;
+}
+
+.confirmation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
