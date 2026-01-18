@@ -338,7 +338,8 @@ footer {
 .products-button:hover,
 .pdetails:hover,
 .products:hover,
-.product-details-button:hover {
+.product-details-button:hover,
+.submit:hover {
   color: white;
   background-color: #2f9a63;
 }
