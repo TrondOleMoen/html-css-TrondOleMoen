@@ -157,6 +157,7 @@ footer {
   display: flex;
   padding-top: 10px;
   justify-content: center;
+  font-size: 28px;
 }
 
 .social-media i {
@@ -361,7 +362,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .footer-content h3,
 .footer-content p {
   color: white;
+  text-align: center;
 }
