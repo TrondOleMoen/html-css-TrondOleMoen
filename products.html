@@ -1,108 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-    <meta charset="UTF-8">
-    <meta name="description" content="Our selection of high quality jackets for your outdoor adventures.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fa4d8bdf69.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Our selection of high quality jackets for your outdoor adventures."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fa4d8bdf69.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Rainy Days</title>
-</head>
+    <script src="script.js" type="module"></script>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="home_24"><a href="index.html"><img src="./assets/images/home_24.png"
-                        alt="Home icon representing the main page navigation" /> </a></div>
-            <div class="logo"><img height="60" src="./assets/images/rainydays_navbar_logo.png"
-                    alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear" />
-            </div>
-            <div class="push"></div>
-            <div class="shopping_cart_24"><a href="cart.html"><img src="./assets/images/shopping_cart_24.png"
-                        alt="Shopping cart icon representing the user's cart for online shopping" /> </a>
-            </div>
-            <div class="credit_card_24"><a href="payment-details.html"><img src="./assets/images/credit_card_24.png"
-                        alt="Icons representing various credit card companies accepted for payment" /> </a>
-            </div>
-        </nav>
+      <nav>
+        <div class="home_24">
+          <a href="index.html"
+            ><img
+              src="./assets/images/home_24.png"
+              alt="Home icon representing the main page navigation"
+            />
+          </a>
+        </div>
+        <div class="logo">
+          <img
+            height="60"
+            src="./assets/images/rainydays_navbar_logo.png"
+            alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear"
+          />
+        </div>
+        <div class="push"></div>
+        <div class="shopping_cart_24">
+          <a href="cart.html"
+            ><img
+              src="./assets/images/shopping_cart_24.png"
+              alt="Shopping cart icon representing the user's cart for online shopping"
+            />
+          </a>
+        </div>
+        <div class="credit_card_24">
+          <a href="payment-details.html"
+            ><img
+              src="./assets/images/credit_card_24.png"
+              alt="Icons representing various credit card companies accepted for payment"
+            />
+          </a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section>
-
-            <h1 class="shop-h1">Our Selection</h1>
-            <div class="product-list">
-
-                <div class="product">
-                    <img height="300px" src="./assets/images/style_jackets_versa_2.jpg"
-                        alt="Rain jacket black with white and yellow highlights" />
-                    <p>Style Jackets Versa 2</p>
-                    <span>3999 kr</span>
-                    <button type="details">Details</button>
-                </div>
-                <div class="product"> <a href="product-details.html">
-                        <img height="300px" src="./assets/images/helly_hansen_runner_3.jpg"
-                            alt="Sporty, slim and light rain jacket in vibrant red" />
-                        <p>Helly Hansen Runner 3</p>
-                        <span>2000 kr</span>
-                        <a href="product-details.html" class="product-details-button">Details</a>
-                </div>
-                <div class="product">
-                    <img height="300px" src="./assets/images/strim_fleece_3.jpg" alt="Fleece jacket in green brown" />
-                    <p>Strim Fleece 3</p>
-                    <span>2399 kr</span>
-                    <button type="details">Details</button>
-                </div>
-                <div class="product">
-                    <img height="300px" src="./assets/images/ax_oceanic.jpg"
-                        alt="Ax Oceanic rain jacket in sleek gray" />
-                    <p>Ax Oceanic Jacket</p>
-                    <span>2999 kr</span>
-                    <button type="details">Details</button>
-                </div>
-                <div class="product">
-                    <img height="300px" src="./assets/images/helly_hansen_tundra.jpg"
-                        alt="Sturdy rain jacket in gray with high vis orange and black" />
-                    <p>Helly Hansen Tundra Jacket</p>
-                    <span>3000 kr</span>
-                    <button type="details">Details</button>
-                </div>
-                <div class="product">
-                    <img height="300px" src="./assets/images/style_jackets_winter_race.jpg"
-                        alt="Stylish black and grey with goretex materials" />
-                    <p>Style Jackets Winter Race</p>
-                    <span>3500 kr</span>
-                    <button type="details">Details</button>
-                </div>
-                <div class="product">
-                    <img height="300px" src="./assets/images/troll_rugged.jpg"
-                        alt="Rain jacket, grey with small red detials" />
-                    <p>Troll Rugged Jacket</p>
-                    <span>4000 kr</span>
-                    <button type="details">Details</button>
-                </div>
-            </div>
-
-        </section>
+      <h1 class="shop-h1">Our Selection</h1>
+      <div id="container"></div>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <h3>Rainy Days</h3>
-                <p>Your go-to store for stylish and functional sports gear.</p>
-                <p>Contact us, phone: +47 457 59 317, email: RainyDays@gmail.com</p>
-                <div class="social-media">
-                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
+      <div class="footer">
+        <div class="footer-content">
+          <h3>Rainy Days</h3>
+          <p>Your go-to store for stylish and functional sports gear.</p>
+          <p>Contact us, phone: +47 457 59 317, email: RainyDays@gmail.com</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.x.com"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
-
+  </body>
 </html>

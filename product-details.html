@@ -1,90 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-    <meta charset="UTF-8">
-    <meta name="description" content="Our detailed jackets of outstanding quality.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <script src="https://kit.fontawesome.com/fa4d8bdf69.js" crossorigin="anonymous"></script>
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Our detailed jackets of outstanding quality."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa4d8bdf69.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Rainy Days</title>
-</head>
+    <script src="getproduct.js" type="module"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="home_24"><a href="index.html"><img src="./assets/images/home_24.png"
-                        alt="Home icon representing the main page navigation" /> </a></div>
-            <div class="logo"><img height="60" src="./assets/images/rainydays_navbar_logo.png"
-                    alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear" />
-            </div>
-            <div class="push"></div>
-            <div class="shopping_cart_24"><a href="cart.html"><img src="./assets/images/shopping_cart_24.png"
-                        alt="Shopping cart icon representing the user's cart for online shopping" /> </a>
-            </div>
-            <div class="credit_card_24"><a href="payment-details.html"><img src="./assets/images/credit_card_24.png"
-                        alt="Icons representing various credit card companies accepted for payment" /> </a>
-            </div>
-        </nav>
+      <nav>
+        <div class="home_24">
+          <a href="index.html"
+            ><img
+              src="./assets/images/home_24.png"
+              alt="Home icon representing the main page navigation"
+            />
+          </a>
+        </div>
+        <div class="logo">
+          <img
+            height="60"
+            src="./assets/images/rainydays_navbar_logo.png"
+            alt="Rainy Days logo featuring stylized text in blue and gray tones, representing an outdoor clothing brand specializing in rain gear"
+          />
+        </div>
+        <div class="push"></div>
+        <div class="shopping_cart_24">
+          <a href="cart.html"
+            ><img
+              src="./assets/images/shopping_cart_24.png"
+              alt="Shopping cart icon representing the user's cart for online shopping"
+            />
+          </a>
+        </div>
+        <div class="credit_card_24">
+          <a href="payment-details.html"
+            ><img
+              src="./assets/images/credit_card_24.png"
+              alt="Icons representing various credit card companies accepted for payment"
+            />
+          </a>
+        </div>
+      </nav>
     </header>
     <main class="products-page">
+      <section>
+        <h1>Product Details</h1>
+      </section>
+      <div id="details"></div>
+      <section>
+        <div class="bottom-nav">
+          <a href="products.html" class="back-button"
+            ><i class="fa-solid fa-arrow-left"></i>Products</a
+          >
 
-        <section>
-            <h1>Product Details</h1>
-            <div class="product-details-container">
-                <div class="product-1"><img src="./assets/images/helly_hansen_runner_3.jpg"
-                        alt="Sporty, slim and light rain jacket in vibrant red." />
-                </div>
-                <div class="product-details-text">
-                    <h2>Helly Hansen Runner 3</h2>
-                    <p>Sporty outdoors jacket excellent for a misty/rainy workout.</p>
-                    <ul>
-                        <li>Material: 100% Polyester with Helly Protection</li>
-                        <li>Color: Vibrant Red</li>
-                        <li>
-                            <p class="price">Price: 2000 kr</p>
-                        </li>
-                        <li>Available Sizes: <button class="size">XS</button> <button class="size">S</button>
-                            <button class="size">M</button> <button class="size">L</button> <button
-                                class="size">XL</button>
-                        </li>
-                        <li><button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i>Add to
-                                Cart</button></li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="bottom-nav">
-
-
-                <a href="products.html" class="back-button"><i class="fa-solid fa-arrow-left"></i>Products</a>
-
-                <div class="push"> </div>
-                <a href="cart.html" class="cart-button"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-                <a href="payment-details.html" class="payment-button"><i
-                        class="fa-regular fa-credit-card"></i>Checkout</a>
-            </div>
-        </section>
+          <div class="push"></div>
+          <a href="cart.html" class="cart-button"
+            ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+          >
+          <a href="payment-details.html" class="payment-button"
+            ><i class="fa-regular fa-credit-card"></i>Checkout</a
+          >
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <h3>Rainy Days</h3>
-                <p>Your go-to store for stylish and functional sports gear.</p>
-                <p>Contact us, phone: +47 457 59 317, email: RainyDays@gmail.com</p>
-                <div class="social-media">
-                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
+      <div class="footer">
+        <div class="footer-content">
+          <h3>Rainy Days</h3>
+          <p>Your go-to store for stylish and functional sports gear.</p>
+          <p>Contact us, phone: +47 457 59 317, email: RainyDays@gmail.com</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.x.com"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
