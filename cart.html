@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Rainy Days</title>
+    <!-- <script src="script.js" type="module"></script> -->
+    <script src="cart.js" type="module"></script>
 </head>
 
 
@@ -33,9 +35,12 @@
         <section>
 
             <h1>Cart</h1>
-            <div class="cart">
-                <div class="product-details-container">
-                    <div class="product-1"><img src="./assets/images/helly_hansen_runner_3.jpg"
+            <div class="cart-items">
+                <!-- <div class="product-details-container"> -->
+                <div class="cart-row">
+                    <!-- <div class="product-1">-->
+                    <div class="cart-details">
+                        <img src="./assets/images/helly_hansen_runner_3.jpg" 
                             alt="Sporty, slim and light rain jacket in vibrant red" />
                     </div>
                     <div class="product-details-text">
@@ -43,8 +48,11 @@
                         <p>Sporty outdoors jacket excellent for a misty/rainy workout.</p>
                         <p>Material: 100% Polyester with Helly Protection</p>
                         <p>Color: Vibrant Red</p>
-                        <p class="price">Price: 2000 kr</p>
-                        <button class="remove-from-cart-btn">Remove from cart</button>
+                        <p>Price:</p>
+                        <p class="cart-price"> 2000 kr</p>
+                        
+                        <input class="cart-quantity-inupt" type="number" value="1">
+                        <button class="remove-from-cart-btn">REMOVE</button>
                     </div>
                 </div>
                 <div class="product-details-container">
@@ -56,11 +64,15 @@
                         <p>Stylish black jacket</p>
                         <p>100% natural leather</p>
                         <p>Deep black with white and radiant yellow</p>
-                        <p class="price">Price 3999 kr</p>
-                        <button class="remove-from-cart-btn">Remove from cart</button>
+                        <p>Price:</p>
+                        <p class="price"> 4000 kr</p>
+ <input class="cart-inupt" type="number" value="2">
+<button class="remove-from-cart-btn">REMOVE</button>
                     </div>
 
                 </div>
+                <p>Total:</p>
+                <div class="cart-total-price">6000</div>
             </div>
         </section>
         <section>
@@ -85,6 +97,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
