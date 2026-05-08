@@ -88,10 +88,10 @@ function updateCartTotal() {
     let price = parseFloat(priceElement.innerText.replace("$", ``));
     // replace value with price from the API
     let quantity = quantityElement.value;
-    total = total + price * quantity;
+    total = total + ${price} * quantity;
   }
   total = Math.round((total * 100) / 100);
   // change to work with API values
   document.getElementsByClassName("cart-total-price")[0].innerText =
-    total + "kr";
+    "$" + total;
 }
