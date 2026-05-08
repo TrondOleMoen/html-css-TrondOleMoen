@@ -17,9 +17,9 @@ async function getClothingData() {
       image.src = jacket.image.url;
       image.alt = jacket.image.alt;
       if (jacket.onSale === true) {
-        price.textContent = `On sale! ${jacket.discountedPrice}`;
+        price.textContent = `On sale! $${jacket.discountedPrice} Original price $${jacket.price}`;
       } else {
-        price.textContent = jacket.price;
+        price.textContent = `$${jacket.price}`;
       }
       card.href = `/product-details.html?id=${jacket.id}`;
       card.className = "card";
